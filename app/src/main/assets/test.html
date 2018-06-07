@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Carson_Ho</title>
+
+    // JS代码
+    <script>
+// Android需要调用的方法
+   function callJS(){
+      alert("Android调用了JS的callJS方法");
+   }
+
+   function CallAndroid(){
+   document.location = "js://webview?arg1=111&arg2=222";
+   test.hello("js调用了Android的hello方法");
+   }
+
+   function clickPrompt(){
+    // 调用prompt（）
+    var result=prompt("js://demo?arg1=111&arg2=222");
+    alert("demo " + result);
+}
+
+
+    </script>
+
+</head>
+<body>
+<button type="button" id="button1" onclick="clickPrompt()"></button>
+</body>
+
+</html>
